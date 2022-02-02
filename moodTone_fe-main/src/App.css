@@ -1,0 +1,125 @@
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+}
+
+.circleLogo {
+  top: -20px;
+  overflow:hidden;
+  position: relative;
+  margin: 1em auto;
+  padding: 0;
+  width: 32em; height: 32em;
+  border-radius: 50%;
+  list-style: none;
+  transform: rotateZ(-120deg);
+  animation: spinning-wheel 45s linear infinite;
+}
+
+.segment {
+  overflow: hidden;
+  position: absolute;
+  top: 0; right: 0;
+  width: 50%; height: 50%;
+  transform-origin: 0% 100%; 
+}
+.segment:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.segment p {
+  transform: rotateZ(5deg) skewY(58deg);
+  margin-top: 140px;
+  width: inherit;
+  text-align: center;
+}
+.red {
+  background-color: #ae2012;
+  transform:  rotateZ(30deg) skewY(-60deg);
+  color: #004A10;
+}
+.orange {
+  background-color: #bb3e03 ;
+  transform:  rotateZ(60deg) skewY(-60deg);
+  color: #004A30;
+}
+.yellow {
+  background-color: #ee9b00;
+  transform:  rotateZ(90deg) skewY(-60deg);
+  color: #072672;
+}
+.beige {
+  background-color: #f3dfc1;
+  transform:  rotateZ(300deg) skewY(-60deg);
+  color: #3F5871;
+}
+.green {
+  background-color: #5da271;
+  transform:  rotateZ(120deg) skewY(-60deg);
+  color: #8F3426;
+}
+.blue {
+  background-color: #31afd4;
+  transform:  rotateZ(240deg) skewY(-60deg);
+  color: #F87D00;
+}
+.darkBlue {
+  background-color: #005f73;
+  transform:  rotateZ(150deg) skewY(-60deg);
+  color: #5C2D00;
+}
+.purple {
+  background-color: #745c97;
+  transform:  rotateZ(210deg) skewY(-60deg);
+  color: #8F8424;
+}
+.black {
+  background-color: #050505;
+  transform:  rotateZ(0deg) skewY(-60deg);
+  color: #828080;
+}
+.gray {
+  background-color:#696773 ;
+  transform:  rotateZ(330deg) skewY(-60deg);
+  color: #545040;
+}
+.white {
+  background-color: #f7f0f0;
+  transform:  rotateZ(270deg) skewY(-60deg);
+  color: #768976;
+}
+.pink {
+  background-color: #d87cac;
+  transform:  rotateZ(180deg) skewY(-60deg);
+  color: #8AB838;
+}
+
+.mediaPlayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes spinning-wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen {
+  
+}
